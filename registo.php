@@ -20,6 +20,4 @@ mysqli_query($conexao, $sqlGravar);
 
 mysqli_close($conexao);
 
-header("location: registroDeEquipes.php");
-
-?>
+header("location: registroDeEquipes.html");
