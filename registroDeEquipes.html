@@ -2,10 +2,12 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de equipe - Torneio CS</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -20,12 +22,18 @@
 
         <a class="botao" href="index.html">Sobre o torneio</a>
 
-        <h1>Registro de equipes</h1>
+        <h1>Registro de equipes</h1><br>
+        <strong>Nomes imprópios resultara na desqualificação imediata</strong>
+        <strong>Equipamentos apenas disponivel pelo evento</strong>
+        <strong>Alterações na equipe falar com TI21</strong>
         <br>
 
-        <form action="#">
+        <form action="registo.php" method="POST" class="oculto">
 
-            <label for="nomeDaEquipe">Nome da Equipe: </label>
+            <input type="radio" name="confirmar" id="confirmar" required><label for="confirmar">Concordo e entendo as
+                regras do registro de equipes</label>
+
+            <br><label for="nomeDaEquipe">Nome da Equipe </label>
             <input type="text" name="nomeDaEquipe" id="nomeDaEquipe" required><br>
 
             <label for="nomeDo1Membro">Nome do 1º membro </label>
