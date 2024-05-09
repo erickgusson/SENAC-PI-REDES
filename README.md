@@ -1,6 +1,10 @@
 # SENAC-PI-REDES
 Repositório do site de registro de equipes do Projeto Integrador
 
+> [!NOTE]
+> Vai ser necessário criar um banco de dados e alterar as informações do PHP para que o cadastro de equipes funcione
+
+
 ## Código necessário do banco de dados
 
 ```sql
