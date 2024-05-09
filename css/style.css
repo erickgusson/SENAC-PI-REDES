@@ -110,6 +110,10 @@ form input {
     width: 90%;
 }
 
+input[type="radio"] {
+    accent-color: #7051A1;
+}
+
 @media screen and (min-width: 520px) {
     header img {
         height: 50vh;
