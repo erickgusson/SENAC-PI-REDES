@@ -9,13 +9,16 @@ $conexao = mysqli_connect($servidor, $usuarioBD, $senha, $banco);
 
 //Campos de cadastro
 $nomeEquipe = $_POST['nomeDaEquipe'];
+$curso = $_POST['curso'];
+$sala = $_POST['sala'];
+$professor = $_POST['professor'];
 $membro1 = $_POST['nomeDo1Membro'];
 $membro2 = $_POST['nomeDo2Membro'];
 $membro3 = $_POST['nomeDo3Membro'];
 $membro4 = $_POST['nomeDo4Membro'];
 
 //Inserção no banco
-$sqlGravar = "insert into tb_equipes(nomeDaEquipe, membro1, membro2, membro3, membro4) values ('$nomeEquipe', '$membro1', $membro2, '$membro3', '$membro4')";
+$sqlGravar = "insert into tb_equipes(nomeDaEquipe, curso, sala, professor, membro1, membro2, membro3, membro4) values ('$nomeEquipe', '$membro1', $membro2, '$membro3', '$membro4')";
 mysqli_query($conexao, $sqlGravar);
 
 mysqli_close($conexao);
