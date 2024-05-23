@@ -18,7 +18,7 @@ $membro3 = $_POST['nomeDo3Membro'];
 $membro4 = $_POST['nomeDo4Membro'];
 
 //Inserção no banco
-$sqlGravar = "insert into tb_equipes(nomeDaEquipe, curso, sala, professor, membro1, membro2, membro3, membro4) values ('$nomeEquipe', '$membro1', $membro2, '$membro3', '$membro4')";
+$sqlGravar = "insert into tb_equipes(nomeDaEquipe, curso, sala, professor, membro1, membro2, membro3, membro4) values ('$nomeEquipe', '$curso', '$sala', '$professor', '$membro1', '$membro2', '$membro3', '$membro4')";
 mysqli_query($conexao, $sqlGravar);
 
 mysqli_close($conexao);
